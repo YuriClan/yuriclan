@@ -1,26 +1,19 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/indigo.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/purple.css';
+@import '@radix-ui/colors/violet.css';
+
 
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+button,
+p {
+  all: unset;
 }
