@@ -5,7 +5,7 @@ import Link from "next/link"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import style from "../../styles/style.module.css"
 import { cva } from "class-variance-authority"
-import cn from "lib/utils"
+import {cn} from "lib/utils"
 // import { Icons } from "@/components/icons"
 import {
   NavigationMenu,
@@ -57,11 +57,11 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className={style.NavigationMenu}>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent className="NavigationMenuContent">
+          <NavigationMenuContent className={style.NavigationMenuContent}>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] notoneof">
               <li className={style.yuriGetStarted}>
                 <NavigationMenuLink asChild>
@@ -95,8 +95,9 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+          <NavigationMenuContent className={style.NavigationMenuContent}>
+            <ul className={style.componentTableElements}>
+            {/* < className={style.componentTableElements}> */}
               {components.map((component) => (
                 <ListItem
                   key={component.title}
