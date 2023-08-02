@@ -9,6 +9,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "allowImportingTsExtensions": true,
     "allowJs": true,
     "skipLibCheck": false,
     "strict": false,
