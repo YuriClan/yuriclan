@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
 // import { Button } from "@/components/ui/button"
 import { badgeVariants } from "@/components/ui/badge"
+import {HoverCardDemo} from 'components/HoverCard'
 
 
 function MainSection() {
@@ -19,6 +20,9 @@ function MainSection() {
                 <p className={style.mainSectionPara}>
                     YuriBot: Your Discord Commando! Dominate with inspiration, crush <span>offenders</span> with <span>ruthless</span> moderation, and unleash its untamed potential. <span>The ultimate force in action!</span>
                 </p>
+                <div className="hoverContainer">
+                    Made with &#10084; by<HoverCardDemo/>
+                </div>
             </div>
         </div>
     </>
