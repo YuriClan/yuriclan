@@ -17,50 +17,50 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-const components: { title: string; href: string; description: string }[] = [
+const components: { title: string; href: string; description: string;}[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Documentation",
+    href: "/",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Official docs for YuriBot, customize it for your Server",
   },
   {
-    title: "Hover Card",
+    title: "Blog",
     href: "/docs/primitives/hover-card",
     description:
-      "For sighted users to preview content available behind a link.",
+      "For sighted users to preview content and nightly-updates",
   },
+  // {
+  //   title: "Progress",
+  //   href: "/docs/primitives/progress",
+  //   description:
+  //     "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  // },
+  // {
+  //   title: "Scroll-area",
+  //   href: "/docs/primitives/scroll-area",
+  //   description: "Visually or semantically separates content.",
+  // },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
+    title: "Status",
     href: "/docs/primitives/tabs",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "Check uptime running services are online.",
   },
   {
-    title: "Tooltip",
+    title: "Contribute",
     href: "/docs/primitives/tooltip",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "We always welcome new minds and fresh ideas.",
   },
 ]
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu className={style.NavigationMenu}>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+    <NavigationMenu className={style.preventborder}>
+      <NavigationMenuList className={style.preventborder}>
+        <NavigationMenuItem className={style.preventborder}>
+          <NavigationMenuTrigger className={style.preventborder}>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent className={style.NavigationMenuContent}>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] notoneof">
               <li className={style.yuriGetStarted}>
@@ -94,7 +94,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Service</NavigationMenuTrigger>
           <NavigationMenuContent className={style.NavigationMenuContent}>
             <ul className={style.componentTableElements}>
             {/* < className={style.componentTableElements}> */}
@@ -103,6 +103,7 @@ export function NavigationMenuDemo() {
                   key={component.title}
                   title={component.title}
                   href={component.href}
+                  className={style.anchorLinks}
                 >
                   {component.description}
                 </ListItem>
