@@ -16,8 +16,15 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "react"
+        "react",
+        "react-hooks",
+        "next"
     ],
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
     "rules": {
     }
 }

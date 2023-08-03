@@ -12,7 +12,9 @@ const colorMap = {
 };
 
 function Grid() {
-    const [hoveredContainer, setHoveredContainer] = useState(null);
+    // const [hoveredContainer, setHoveredContainer] = useState(null);
+    const [hoveredContainer, setHoveredContainer] = useState<"gridContainer1" | "gridContainer2" | "gridContainer3" | null>(null);
+
 
     const handleContainerHover = (container) => {
         setHoveredContainer(container);
@@ -23,7 +25,7 @@ function Grid() {
     };
     return (
       <>
-         <div className={`${style.gridChange}`} style={{ backgroundColor: colorMap[hoveredContainer] }}>
+         <div className={`${style.gridChange}`} style={{ backgroundColor: colorMap[hoveredContainer || 'gridContainer1'] }}>
           <Container>
             <Row>
               <Col sm>
