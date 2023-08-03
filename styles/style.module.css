@@ -942,6 +942,7 @@
 
 .anchorLinks {
   color: #000;
+  transition: all 0.2s ease-in-out;
 }
 .anchorLinks:hover {
   color: #000;
@@ -963,3 +964,4 @@
 .NavigationMenu {
   border: 0px!important;
 }
+
