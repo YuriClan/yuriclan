@@ -30,17 +30,17 @@ const components: { title: string; href: string; description: string;}[] = [
     description:
       "For sighted users to preview content and nightly-updates",
   },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
+  // {
+  //   title: "Progress",
+  //   href: "/docs/primitives/progress",
+  //   description:
+  //     "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  // },
+  // {
+  //   title: "Scroll-area",
+  //   href: "/docs/primitives/scroll-area",
+  //   description: "Visually or semantically separates content.",
+  // },
   {
     title: "Status",
     href: "/docs/primitives/tabs",
@@ -57,10 +57,10 @@ const components: { title: string; href: string; description: string;}[] = [
 
 export function NavigationMenuDemo() {
   return (
-    <NavigationMenu className={style.NavigationMenu}>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+    <NavigationMenu className={style.preventborder}>
+      <NavigationMenuList className={style.preventborder}>
+        <NavigationMenuItem className={style.preventborder}>
+          <NavigationMenuTrigger className={style.preventborder}>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent className={style.NavigationMenuContent}>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] notoneof">
               <li className={style.yuriGetStarted}>

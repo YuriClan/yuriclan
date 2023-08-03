@@ -87,6 +87,7 @@
   width: 100%;
   animation-duration: 250ms;
   animation-timing-function: ease;
+  border: 0px;
 }
 .NavigationMenuContent[data-motion='from-start'] {
   animation-name: enterFromLeft;
@@ -965,3 +966,6 @@
   border: 0px!important;
 }
 
+.preventborder {
+  border: 0px;
+}
