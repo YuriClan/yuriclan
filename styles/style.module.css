@@ -379,6 +379,7 @@
 .buttonCSS {
   padding-left: 25px;
   padding-right: 25px;
+  text-decoration: none;
 }
 .mainSectionBody {
   background: #000000;
@@ -508,13 +509,14 @@
 
 .gridChange {
   padding-top: 5em;
-  padding-bottom: 5em;
+  /* padding-bottom: 15em; */
 }
 .gridContainers {
   background: #efefef;
   padding: 1.5em;
   border-radius: 20px;
   user-select: none;
+  /* padding-bottom: 10em; */
 }
 
 .gridLogo1{
@@ -664,6 +666,9 @@
   left: 0;
   text-align: center;
   opacity: 0.1;
+  /* padding-bottom: 5em;
+   */
+   /* opacity: 0; */
 }
 
 /* icons */
@@ -902,4 +907,59 @@
   margin-left: 2em;
   user-select: none;
   cursor: pointer;
+}
+
+.yuriclanLinks a, .yuriclanLinks a:visited, .yuriclanLinks a:hover, .yuriclanLinks a:focus {
+  text-decoration: none;
+  color: cyan;
+}
+.yuriclanLinks {
+  color: cyan;
+}
+
+
+.Docs {
+  /* background: #000; */
+  color: #fff;
+  text-decoration: none;
+  /* display: flex; */
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 10.15em;
+  padding-bottom: 9em;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.logo{
+  user-select: none;
+  cursor: pointer;
+}
+
+.anchorLinks {
+  color: #000;
+}
+.anchorLinks:hover {
+  color: #000;
+  background: #efefef;
+  border-radius: 10px;
+}
+
+.NavigationMenuContent{
+  border-radius: 20px;
+  border: 0;
+}
+
+.gettingStartedText {
+  font-size: 1rem;
+  line-height: 1.25rem; 
+  line-height: 1.25; 
+}
+
+.NavigationMenu {
+  border: 0px!important;
 }

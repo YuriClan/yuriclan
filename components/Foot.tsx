@@ -74,7 +74,9 @@ return (
         </div>
 		</Row>
         <div className="flex flex-col border-t border-gray-300 py-2 lg:py-3 mt-8 lg:mt-12 lg:flex-row lg:justify-between lg:items-center">
-            hey
+            <p className={style.yuriclanLinks}>
+				@2023 <a href="https://github.com/YuriClan">YuriClan</a>
+			</p>
         </div>
 	</Container>
 	</Box>

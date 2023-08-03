@@ -14,7 +14,7 @@ const Header = () => {
                 <div className={style.logo}>Yuri Bot</div>
                 <div className={style.navigationMenuCSS}><NavigationMenuDemo/></div>
                 <Button className={buttonVariants({ variant: "secondary" })} asChild>
-                    <Link href="/login" className={style.buttonCSS}>Login</Link>
+                    <Link href="https://discord.com/api/oauth2/authorize?client_id=904261940757557270&permissions=18127178893382&scope=bot" className={style.buttonCSS}>Invite</Link>
                 </Button>
             </div>
         </>
