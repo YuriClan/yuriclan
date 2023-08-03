@@ -74,20 +74,20 @@ export function NavigationMenuDemo() {
                       <div className="mb-2 mt-4 text-lg font-medium">
                         yuri/bot
                       </div>
-                      <p className="text-sm leading-tight text-muted-foreground">
+                      <p className={style.gettingStartedText}>
                         YuriBot: Enrich Your Discord Community with Power and Style!
                       </p>
                     </div>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/docs" title="Introduction" className={style.anchorLinks}>
+                About Yuri, YuriClan and our story.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/docs/installation" title="Invite" className={style.anchorLinks}>
+                Invite Yuri to your Server and enjoy the perks.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
+              <ListItem href="/docs/primitives/typography" title="Features" className={style.anchorLinks}>
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
             </ul>
@@ -113,7 +113,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+              <p className={style.Docs}>Documentation</p>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
