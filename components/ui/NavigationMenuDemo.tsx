@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
+// import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import style from "../../styles/style.module.css"
 import { cva } from "class-variance-authority"
 import {cn} from "lib/utils"
