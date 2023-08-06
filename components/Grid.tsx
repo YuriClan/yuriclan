@@ -26,8 +26,7 @@ function Grid() {
     return (
       <>
          <div className={`${style.gridChange}`} style={{ backgroundColor: colorMap[hoveredContainer || 'gridContainer1'] }}>
-          <Container>
-            <div className={style.gridContainer}>
+          <Container className={style.gridContainer}>
             <Row>
               <Col sm>
                 <div className={style.backText}>
@@ -62,7 +61,7 @@ function Grid() {
                   </div>
                 </div>
               </Col>
-              {/* <Col sm></Col> */}
+              <Col sm></Col>
               <Col sm>
                 <div className={`${style.gridContainers} ${style.gridContainer3}`}
                                 onMouseEnter={() => handleContainerHover("gridContainer3")}
@@ -82,7 +81,6 @@ function Grid() {
                 
               </Col>
             </Row>
-            </div>
           </Container>
         </div>
       </>
